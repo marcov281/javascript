@@ -76,8 +76,14 @@
                 console.log('no. of tail = ->'+tail);
                 console.log('percentage of head vs tail->'+(head/tail)*100);
                 
-            },      
-            //finding harmonic number
+            },
+            
+            
+
+
+            /*finding harmonic number. here user gives an input upto whic value 
+            he want to find the harmonic number then calclute it by formula and 
+            print it*/
         harmonic: function(term)
         {
             var sum=0;
@@ -448,6 +454,7 @@ permute :function(alphabets, startIndex, endIndex) {
         alphabets[index2] = temp;
         return alphabets;
       }
+    
       
   },
 
