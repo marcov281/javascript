@@ -17,4 +17,9 @@
 var x=process.argv[2];
 var y=process.argv[3];
 var utility=require('./utility.js');
+
+var numbers = /^[0-9]+$/;
+if(x.match(numbers) && y.match(numbers))
 utility.distance(x,y);
+else
+console.log('please enter valid value!!  try again')

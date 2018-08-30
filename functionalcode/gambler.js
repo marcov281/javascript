@@ -10,7 +10,7 @@
  *  @overview       : 1stcode module to simulate a real world gambling game.
  *  @module         : gambler.js - This is optional if expeclictly its an npm or local package
  *  @author         : soumallya mondal
- *  @version        : 1.0
+ *  @version        : 1.s0
  *  @since          : 30-08-2018
  *
  ******************************************************************************/
@@ -24,8 +24,12 @@ function gambler()
             prompts.question("enter how many times u want to play->",function(play){
                 {
                     prompts.question("enter your goal->",function(goal){
-
+                        var numbers = /^[0-9]+$/;
+                        if
+                        (stake.match(numbers) && play.match(numbers) && goal.match(numbers))
                         utility.gambler(stake,play,goal);
+                        else 
+                        console.log('please enter valid value!!!!!');
                         prompts.close();
                     });
                 }

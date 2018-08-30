@@ -1,9 +1,14 @@
-    
+    var r2=require('lodash');
            
- module.exports={//this is name replace code
+ module.exports={
+     /* this is name replace code, here user have to pass some string value 
+     then the program concate the string value with some message and then 
+     print it back
+     @author-soumallya mondal
+        date-30-08-2018 */
             demo: function(name)
         {
-        if(name.length<=3)
+        if(name.length<=3)// condition
         console.log("user name should be minimum 4 digit\n\n");
         else
         console.log("hello "+name+", how are you\n\n");
@@ -14,7 +19,9 @@
 
 
         /*this is leap yaera code we have to pass year as argument to check
-        wheather it is leap year or not*/
+        wheather it is leap year or not
+        @author-soumallya mondal
+        date-30-08-2018*/
         LeapYear:function(year)
         {
             if(year.length<=3)
@@ -33,7 +40,9 @@
 
 
         /*this code takes vlue from cmd line argument and print the 
-        table of power of two upto that range*/
+        table of power of two upto that range
+        @author-soumallya mondal
+        date-30-08-2018*/
         powerof2:function(limit) 
         {  if(limit>=31)
             console.log("value is out of limit,please re-enter");//to check limit
@@ -59,7 +68,9 @@
 
         /*thhis is toss coin pogram here we have to pass the no of tosses
         and this code will calculate the no of head and tails and 
-        it will also calculate the percetage of head vs tails*/ 
+        it will also calculate the percetage of head vs tails
+        @author-soumallya mondal
+        date-30-08-2018*/ 
         tosscoin:function (no)
             {
                 var head=0;
@@ -83,7 +94,9 @@
 
             /*finding harmonic number. here user gives an input upto whic value 
             he want to find the harmonic number then calclute it by formula and 
-            print it*/
+            print it
+            @author-soumallya mondal
+             date-30-08-2018*/
         harmonic: function(term)
         {
             var sum=0;
@@ -100,7 +113,9 @@
 
 
 /*code to find prime factorization,Prime Factorization" is finding which prime numbers 
-multiply together to make the original number*/
+multiply together to make the original number
+@author-soumallya mondal
+date-30-08-2018*/
     
         primefactor: function(num)
         {
@@ -130,7 +145,9 @@ multiply together to make the original number*/
 
 
 /*this code will take two commandline argument as co-ordinates like(x,y)
- and will calculate the distance from (0,0)*/
+ and will calculate the distance from (0,0)
+ @author-soumallya mondal
+ date-30-08-2018*/
         distance: function(x,y)
         {
             var dis=Math.sqrt((x*x)+(y*y));
@@ -144,7 +161,9 @@ multiply together to make the original number*/
 
 
 /* this code will create a basic simulator of gambling here we need to pass
- starting money as stake, no of times want to play as play, and goal..*/
+ starting money as stake, no of times want to play as play, and goal..
+ @author-soumallya mondal
+date-30-08-2018*/
 
  gambler: function(stake,play,goal)
  {
@@ -199,13 +218,15 @@ multiply together to make the original number*/
 
 
 /*this is a code about creating random coupon by taking a range which is dynamic 
-and can be taken from user*/
+and can be taken from user
+@author-soumallya mondal
+date-30-08-2018*/
  coupons:function(min,max)
     {
         var random=[],i,n;
         for(i=min;i<max;i++)
         {
-            n=_.random(min,max)
+            n=r2.random(min,max)
             random.push(n);
 
         }
@@ -223,7 +244,9 @@ and can be taken from user*/
 
 
  /*this code is use to take value from user of a 2d array and print the same result 
- in the console,The array is dynamic in size */
+ in the console,The array is dynamic in size
+ @author-soumallya mondal
+date-30-08-2018 */
 arr2d: function(  prompts,row,cols)
             {
                 this.row=row;
@@ -285,7 +308,9 @@ arr2d: function(  prompts,row,cols)
 
 /*this is a quadratic equation pogram this pogram take 3 value a,b,c from user and prints the root
 of ax^2 + bx+c , in this pogram we will use some basic math formula and some commonly ued 
-math function to get the desire result*/
+math function to get the desire result
+@author-soumallya mondal
+date-30-08-2018*/
 
 equation: function(a,b,c)
 {
@@ -310,7 +335,9 @@ equation: function(a,b,c)
 
 /* this is a windchill program this takes 2 inputs one is the temparature in farenhite and
 another is the wind speed in miles/hour, a simple formula is provided by that we have to calculate the
-current weather*/ 
+current weather
+@author-soumallya mondal
+date-30-08-2018*/ 
 
     windchill: function(temp,wind)
     {
@@ -328,8 +355,11 @@ current weather*/
 
 
 
-/*this is triplate pogram it is used to find sum of zero ,user have to provide the no of elements and the 
-value want to enter then this pogram will calculate all the set of triplets that makes the sum =0*/
+/*this is triplate pogram it is used to find sum of zero ,user have to provide 
+the no of elements and the value want to enter then this pogram will calculate
+ all the set of triplets that makes the sum =0
+ @author-soumallya mondal
+date-30-08-2018*/
 
 
 sumzero:function(prompts,value)
@@ -396,7 +426,9 @@ sumzero:function(prompts,value)
 
 /* this is a stopwatch pogram by using this we can provide option to users and start/pause/stop a 
 stopwatch
-it gives a real time like simulation to use*/
+it gives a real time like simulation to use
+@author-soumallya mondal
+date-30-08-2018*/
 
 
 currentTime : function()
@@ -427,7 +459,9 @@ elapsedTime : function(start,stop)
 
 /*thhis is a code of permutation in this code we will permute
 a given string provided by the user, at first we have to convert in a char array then
-we have to use backtracking formula */
+we have to use backtracking formula 
+@author-soumallya mondal
+date-30-08-2018*/
 
 
 permute :function(alphabets, startIndex, endIndex) {
