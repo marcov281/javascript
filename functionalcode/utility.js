@@ -318,7 +318,7 @@ equation: function(a,b,c)
     this.b=b;
     this.c=c;
 
-    var delta=Math.floor()(b*b-4*a*c);
+    var delta=Math.floor((b*b-4*a*c));
 
     var root1= (-b+delta)/2*a;    //this is a simple formula
     var root2= (-b-delta)/2*a;    //this is a simple formula
