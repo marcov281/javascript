@@ -1,0 +1,23 @@
+{
+    "inventory": [{
+        "name": "tcs",
+        "no_share": 50,
+        "share_price": 150
+    }, {
+        "name": "capg",
+        "no_share": 70,
+        "share_price": 250
+    }, {
+        "name": "info",
+        "no_share": 60,
+        "share_price": 350
+    }, {
+        "name": "pk",
+        "no_share": "10",
+        "share_price": "100"
+    }, {
+        "name": "jbl",
+        "no_share": "20",
+        "share_price": "150"
+    }]
+}
